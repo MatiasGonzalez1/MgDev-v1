@@ -118,6 +118,7 @@ header .subtitulo{
     overflow: hidden;
     display: flex;
     position: relative;
+    flex-wrap: wrap;
 }
 
 .imagenes{
@@ -145,6 +146,7 @@ header .subtitulo{
 .encima h2{
     position: relative;
     top: 45%;
+    align-items: center;
     text-align: center;
     color: white;
 }
@@ -167,18 +169,18 @@ header .subtitulo{
 }
 
 .card{
-    margin: 20px 0;
+    margin: 30px 0;
     width: 30%;
-    height: 250px;
+    height: 270px;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0px 0px 4px 0px #34495e;
 }
 
 .cards img {
-    width: 130px;
-    height: 130px;
-    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    object-fit: center;
 }
 
 .fondo{
@@ -220,7 +222,7 @@ header .subtitulo{
 .clientes{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin: 50px 10px;
     width: 100%;
     justify-content:space-around;
 }
@@ -301,3 +303,77 @@ input[type="submit"]{
     width: 96px;
 }
 
+@media screen and (max-width:900px){
+    .card{
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:610px){
+    header .textos{
+        margin-top: 130px;
+    }
+    
+    header .titulo{
+        font-size:  75px;
+    }
+   
+    .none{
+        display: none;
+    }
+
+    .imagenes{
+        flex-grow: 1;
+    }
+
+    .card{
+        width: 90%;
+    }
+
+    .fondo{
+        height: auto;
+    }
+
+    .especial{
+        display: none;
+    }
+
+    .cliente{
+        width: 90%;
+        min-height: 200px;
+        margin-bottom: 50px;
+    }
+
+    .parrafo{
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width:380px){
+    header .textos{
+        margin-top: 100px;
+    }
+
+    header .titulo{
+        font-size: 65px;
+    }
+
+    header .subtitulo{
+        font-size: 25px;
+        margin-bottom: 32px;
+    }
+
+    .sobre-nosotros{
+        font-size: 46px;
+    }
+
+    .slogan{
+        font-size: 20px;
+    }
+
+    .titulo-patrocinadores{
+        font-size: 20px;
+    }
+}
+    
