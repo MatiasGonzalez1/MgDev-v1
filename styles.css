@@ -157,3 +157,147 @@ header .subtitulo{
     height: 5px;
     margin: 0 auto;
 }
+
+.cards{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; /*si no hay espacio al ancho baja un nivel*/
+    justify-content: space-around;
+}
+
+.card{
+    margin: 20px 0;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 4px 0px #34495e;
+}
+
+.cards img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+}
+
+.fondo{
+    height: 900px;
+    position: relative;
+    background-image: url(fondo.png);
+    overflow: hidden;
+    background-attachment: fixed;
+    background-position: center;
+    padding: top 130px;
+}
+
+.sesgoabajounico{
+    z-index: 10;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-width: 0 0 35vh 100vw;
+    border-style: solid;
+    border-color: transparent transparent #2c3e50 transparent;
+}
+
+.titulo-patrocinadores, .subtitulo-patrocinadores{
+    color: #fff;
+    text-align: center;
+}
+
+.titulo-patrocinadores{
+    font-size: 56px;
+    margin-top: 150px;
+}
+
+.subtitulo-patrocinadores{
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.clientes{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    width: 100%;
+    justify-content:space-around;
+}
+
+.cliente{
+    width: 25%;
+}
+
+.cliente img{
+    width: 100%;
+}
+
+footer {
+    background: #2c3e50;
+    height:auto;
+}
+
+.titulo-footer, .subtitulo-footer{
+    color: #fff;
+    text-align: center;
+}
+.titulo-footer{
+    font-size:30px;
+}
+
+.subtitulo-footer{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 64px;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+input[type="text"], input[type="email"]{
+    display: inline-block;
+    width: 48%;
+    padding: 13px;
+    border: none;
+    color: #fff;
+    font-family: 'open sans';
+    background:rgba(37, 37, 33, .7);
+    margin-bottom: 16px;
+    border-top:1px solid rgba(37, 37, 33, .7);
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    border-top: 2px solid rgba(255, 255, 255m, 0.7);
+
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 200px;
+    min-height: 200px;
+    background:rgba(37, 37, 33, .7);
+    padding: 13px;
+    border: none;
+    color: #fff;
+    font-family:'open sans' ;
+    margin-bottom: 16px;
+}
+
+input[type="submit"]{
+    display: inline-block;
+    padding: 13px;
+    border: none;
+    color: #fff;
+    background:rgba(37, 37, 33, .7);
+    width: 96px;
+}
+
